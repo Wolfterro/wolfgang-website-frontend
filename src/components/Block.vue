@@ -20,7 +20,7 @@
                 <!-- Imagem -->
                 <div class="col-md-6">
                     <div class="main-content-inside-content-image">
-                        <img :src="api.image" class="img-thumbnail" alt="Imagem">
+                        <img :src="api.image" class="img-thumbnail float-right" alt="Imagem">
                     </div>
                 </div>
             </div>
@@ -49,8 +49,9 @@ export default {
 }
 
 .main-content-inside-content-image {
-    display: inline-block;
+    display: block;
     text-align: right;
+    float: right;
     margin: 100px auto;
     animation: fadein 2s;
 }
