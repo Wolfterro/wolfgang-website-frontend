@@ -20,7 +20,7 @@
                 <!-- Imagem -->
                 <div class="col-md-6">
                     <div class="main-content-inside-content-image">
-                        <img :src="api.image" class="img-thumbnail float-right" alt="Imagem">
+                        <img :src="api.image" class="img-thumbnail" alt="Imagem">
                     </div>
                 </div>
             </div>
@@ -84,6 +84,7 @@ p {
     .main-content-inside-content-image {
         text-align: center;
         margin-top: -20px;
+        float: none;
     }
 
     .main-content-button {
