@@ -13,7 +13,7 @@
 
                         <p class="footer-social-media-p"><a class="footer-a" v-bind:href="api.social_media.linkedin" target="_blank" >LinkedIn</a> • <a class="footer-a" v-bind:href="api.social_media.github" target="_blank">GitHub</a> • <a class="footer-a" v-bind:href="'mailto:' + api.social_media.email">E-Mail</a></p>
                         
-                        <p class="footer-social-media-p">© 2018 Wolfgang de Almeida Pires. Todos os direitos reservados.</p>
+                        <p class="footer-social-media-p">© 2019 Wolfgang de Almeida Pires. Todos os direitos reservados.</p>
                     </div>
                 </div>
             </div>
