@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Jumbotron :api="api"/>
-    <div class="main-blocks" :key="block" v-for="block in api.blocks">
+    <div class="main-blocks" :key="block.id" v-for="block in api.blocks">
       <Block :api="block" />
     </div>
     <Footer :api="api"/>
@@ -15,6 +15,8 @@ import Jumbotron from './components/Jumbotron.vue'
 import Block from './components/Block.vue'
 import Footer from './components/Footer.vue'
 
+import { websiteDefaults } from './defaults/defaults'
+
 export default {
   name: 'app',
   components: {
@@ -24,12 +26,12 @@ export default {
   },
   data () {
     return {
-      api: null
+      api: websiteDefaults
     }
   },
   mounted () {
     axios
-      .get('https://wolfgangalmeida.pythonanywhere.com/api/website/')
+      .get('http://localhost:8000/api/website/')
       .then(response => (this.api = response.data))
   }
 }
