@@ -31,7 +31,7 @@ export default {
   },
   mounted () {
     axios
-      .get('http://localhost:8000/api/website/')
+      .get('https://wolfgangalmeida.pythonanywhere.com/api/website/')
       .then(response => (this.api = response.data))
   }
 }
